@@ -1,100 +1,118 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Quang Ngọc Wedding</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quang Ngọc Wedding Studio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #fafafa;
+      color: #333;
+    }
 
-<style>
-body {
-  margin:0;
-  font-family: Arial;
-  color:#333;
-}
+    header {
+      background: url('https://images.unsplash.com/photo-1529636798458-92182e662485') center/cover;
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
 
-header {
-  display:flex;
-  justify-content:space-between;
-  padding:15px 30px;
-  background:#fff;
-}
+    header h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
 
-.menu a {
-  margin:0 10px;
-  text-decoration:none;
-  color:#333;
-}
+    header p {
+      font-size: 20px;
+    }
 
-.hero {
-  height:90vh;
-  background:url('https://images.unsplash.com/photo-1520857014576-2c4f4c972b57') center/cover;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  color:white;
-  text-align:center;
-}
+    .btn {
+      margin-top: 20px;
+      display: inline-block;
+      padding: 12px 30px;
+      background: #e91e63;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+    }
 
-.hero h1 {
-  font-size:40px;
-}
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
 
-.btn {
-  padding:12px 25px;
-  background:#b56576;
-  color:#fff;
-  text-decoration:none;
-  border-radius:5px;
-}
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      padding: 20px;
+    }
 
-.gallery {
-  display:flex;
-  flex-wrap:wrap;
-  padding:20px;
-}
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+    }
 
-.gallery img {
-  width:23%;
-  margin:1%;
-  border-radius:8px;
-}
+    .price-box {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      margin: 10px;
+      display: inline-block;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
 
-footer {
-  text-align:center;
-  padding:20px;
-  background:#facdcd;
-  color:#fff;
-}
-</style>
+    footer {
+      background: #000;
+      color: white;
+      padding: 30px;
+    }
+  </style>
 </head>
 
 <body>
 
 <header>
-  <h2>Quang Ngọc Wedding</h2>
-  <div class="menu">
-    <a href="#">Trang chủ</a>
-    <a href="#">Album</a>
-    <a href="#">Liên hệ</a>
+  <div>
+    <h1>Quang Ngọc Wedding</h1>
+    <p>Lưu giữ khoảnh khắc đẹp nhất của bạn</p>
+    <a class="btn" href="https://facebook.com" target="_blank">Inbox ngay</a>
   </div>
 </header>
 
-<section class="hero">
-  <div>
-    <h1>Ghi dấu khoảnh khắc yêu thương</h1>
-    <a class="btn">Xem Album</a>
+<section>
+  <h2>Album nổi bật</h2>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1519741497674-611481863552">
+    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+    <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486">
   </div>
 </section>
 
-<section class="gallery">
-  <img src="https://images.unsplash.com/photo-1519741497674-611481863552">
-  <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486">
-  <img src="https://images.unsplash.com/photo-1529634892379-a3c00b5c3d2b">
-  <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc">
+<section>
+  <h2>Bảng giá</h2>
+  <div class="price-box">
+    <h3>Gói Basic</h3>
+    <p>3.000.000đ</p>
+  </div>
+  <div class="price-box">
+    <h3>Gói Premium</h3>
+    <p>6.000.000đ</p>
+  </div>
+</section>
+
+<section>
+  <h2>Khách hàng nói gì</h2>
+  <p>"Ảnh rất đẹp, tự nhiên, đúng cảm xúc"</p>
 </section>
 
 <footer>
-  © 2026 Quang Ngọc Wedding
+  <p>© Quang Ngọc Wedding Studio</p>
 </footer>
 
 </body>
